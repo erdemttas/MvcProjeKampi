@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.concrete.Repositories
 {
-	public class GenereicRepository<T> : IRepository<T> where T : class
+	public class GenericRepository<T> : IRepository<T> where T : class
 	{
 
 		Context c=new Context();
 		DbSet<T> _object;
 
-        public GenereicRepository()
+        public GenericRepository()
         {
 				_object=c.Set<T>();
         }

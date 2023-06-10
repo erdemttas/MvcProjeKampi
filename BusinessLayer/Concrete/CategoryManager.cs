@@ -12,7 +12,7 @@ namespace BusinessLayer.Concrete
 {
 	public class CategoryManager:ICategoryService
 	{
-		GenereicRepository<Category> repo = new GenereicRepository<Category>();
+		GenericRepository<Category> repo = new GenericRepository<Category>();
 		ICategoryDal _categorydal;
 
 		public CategoryManager(ICategoryDal categorydal)
